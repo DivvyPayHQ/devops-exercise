@@ -1,10 +1,5 @@
 ## DevOps Exercises
 
-#### Bonus Exercise: Ansible
-Objective: Configure your fresh EC2 Instance with a complete installation of Minikube using Ansible.
-- Require no user input beyond launching the Ansible Playbook
-- Ansible Playbook should include all the steps necessary to install Minikube.
-
 ### Exercise: Infrastructure as Code
 #### Terraform
 Objective: Create terraform file to deploy a T2.Micro EC2 instance, including VPC Networking and Security Groups
@@ -12,6 +7,12 @@ Objective: Create terraform file to deploy a T2.Micro EC2 instance, including VP
 - EC2 instance must be accessible via the Internet
 - All necessary configurations must be captured in Terraform so the instance can be spun down when not in use
 - Recommend using the Amazon Linux 2 AMI
+
+#### Bonus Exercise: Ansible
+Objective: Configure your fresh EC2 Instance with a complete installation of Minikube using Ansible.
+- Require no user input beyond launching the Ansible Playbook
+- Ansible Playbook should include all the steps necessary to install Minikube.
+
 
 ### Exercise: Bears in the Forest (Golang)
 
