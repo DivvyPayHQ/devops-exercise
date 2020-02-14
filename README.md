@@ -1,15 +1,15 @@
 ## DevOps Exercises
 
 ### Exercise: Infrastructure as Code
-#### Terraform
-Objective: Create terraform file to deploy a T2.Micro EC2 instance, including VPC Networking and Security Groups
+#### Objective
+Create terraform file to deploy a T2.Micro EC2 instance, including VPC Networking and Security Groups
 - Security Group must allow access via port 22 for SSH
 - EC2 instance must be accessible via the Internet
 - All necessary configurations must be captured in Terraform so the instance can be spun down when not in use
 - Recommend using the Amazon Linux 2 AMI
 
-#### Bonus Exercise: Ansible
-Objective: Configure your fresh EC2 Instance with a complete installation of Minikube using Ansible.
+#### Bonus Objective
+Configure your fresh EC2 Instance with a complete installation of Minikube using Ansible.
 - Require no user input beyond launching the Ansible Playbook
 - Ansible Playbook should include all the steps necessary to install Minikube.
 
@@ -18,7 +18,7 @@ Objective: Configure your fresh EC2 Instance with a complete installation of Min
 
 You are an avid hiker but are terrified of bears. Because of this you often find yourself wandering through the deep forest on high-alert. Given your devops background, you decide to automate the process of choosing a route through the forest that avoids bear encounters, so you decide to write an algorithm that will calculate this for you.
 
-#### Challenge
+#### Objective
 
 Given the input data your goal is to find a path from the starting position to the ending position (the forest uses zero-based indexing) that avoids a bear encounter.
 
@@ -60,13 +60,13 @@ You decide to write your algorithm to find the shortest possible path instead of
 #### Preperation
 You should have docker, helm and minikube installed for this exercises.
 
-#### Docker (part 1)
-Objective: Containerize the golang challenge in preparation to deploying it to Minikube
+#### Objective 1
+Containerize the golang challenge in preparation to deploying it to Minikube
 - Dockerfile must be produced which will be used to build this container.
 - Container must run the executable from the Bears in the Forest challenge.
 - Container must expose the HTTP service created in the challenge.
 
-#### Helm (part 3)
-Objective: Create a helm chart and use it to deploy the container (from part 1) to kubernetes
+#### Objective 2 (Helm)
+Create a helm chart and use it to deploy the container (from part 1) to kubernetes (locally or to the instance made in the IaC exercise above)
 - Must include all necessary manifests to support the challenge container.
 - Must expose the challenge container HTTP service
